@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Kelompok 1 Infor4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        
+        .project-card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .project-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(6, 182, 212, 0.15);
+        }
+
+        .badge-status {
+            backdrop-filter: blur(4px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-[100] bg-[#0f172a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-white tracking-tighter">
+                <span class="text-cyan-500 italic">INFOR</span>4.
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="about-us.html" class="hover:text-cyan-400 transition">About Us</a>
+                <a href="projects.html" class="text-cyan-400 font-bold">Projects</a>
+                <a href="index.html#galleries" class="hover:text-cyan-400 transition">Galleries</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-12 px-6 text-center">
+        <div class="container mx-auto" data-aos="fade-up">
+            <span class="text-cyan-500 font-bold tracking-[0.3em] uppercase text-xs">Innovation Showcase</span>
+            <h1 class="text-5xl font-extrabold text-white mt-4 mb-6">Projek Terpilih</h1>
+            <p class="text-slate-400 max-w-xl mx-auto">Koleksi karya digital yang kami bangun dengan dedikasi dan riset mendalam.</p>
+        </div>
+    </header>
+
+    <section class="pb-24 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="project-card rounded-[2rem] overflow-hidden border border-white/5 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-60 overflow-hidden bg-slate-800">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1LjCJXlscFxJibT9E0TtYfRVP8QDSCtcB" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Perkembangan AI">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge-status text-xs text-cyan-400 px-3 py-1 rounded-full border border-cyan-500/30">Completed</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-white mb-3">Perkembangan AI</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Riset dan implementasi teknologi kecerdasan buatan dalam memproses data digital secara efisien.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-white/5">Artificial Intelligence</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-white/5">Machine Learning</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-cyan-400 font-semibold hover:text-cyan-300 transition group-hover:translate-x-2 duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card rounded-[2rem] overflow-hidden border border-white/5 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-60 overflow-hidden bg-slate-800">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1c9LPOfsjCbBtWwd5QHYhSsGKVmRlPYJt" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="MIT App">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge-status text-xs text-blue-400 px-3 py-1 rounded-full border border-blue-500/30">Completed</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-white mb-3">MIT App</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Pengembangan aplikasi mobile berbasis blok pemrograman menggunakan platform MIT App Inventor.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-white/5">Android</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-white/5">No-Code</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-cyan-400 font-semibold hover:text-cyan-300 transition group-hover:translate-x-2 duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card rounded-[2rem] overflow-hidden border border-white/5 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative h-60 overflow-hidden bg-slate-800">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1JUZDtAzdsVsBkakAhjdP5CIe21Q-hyqM" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Arduino Uno">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge-status text-xs text-amber-400 px-3 py-1 rounded-full border border-amber-500/30 font-bold uppercase">Completed</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-white mb-3">Arduino Uno</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Eksperimen perangkat keras menggunakan mikrokontroler Arduino untuk sistem otomatisasi cerdas.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-white/5">IoT</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-white/5">Hardware</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-cyan-400 font-semibold hover:text-cyan-300 transition group-hover:translate-x-2 duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-cyan-600 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-[#0f172a] mb-6">Punya Ide Projek Menarik?</h2>
+            <a href="index.html#contact" class="bg-[#0f172a] text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition">Mari Diskusikan</a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-500 text-sm">
+        &copy; 2026 Kelompok 1 Infor4. Built with Innovation.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>

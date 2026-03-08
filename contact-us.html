@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kelompok 1 Infor4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; color: #e2e8f0; }
+        
+        .input-field {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #06b6d4;
+            background: rgba(30, 41, 59, 0.8);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-[100] bg-[#0f172a]/80 backdrop-blur-md border-b border-white/5">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-white tracking-tighter">
+                <span class="text-cyan-500 italic">INFOR</span>4.
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="about-us.html" class="hover:text-cyan-400 transition">About Us</a>
+                <a href="projects.html" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="galleries.html" class="hover:text-cyan-400 transition">Galleries</a>
+                <a href="contact-us.html" class="text-cyan-400 font-bold border-b-2 border-cyan-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-12 px-6 text-center">
+        <div class="container mx-auto" data-aos="fade-up">
+            <span class="text-cyan-500 font-bold tracking-[0.3em] uppercase text-xs">Get In Touch</span>
+            <h1 class="text-5xl font-extrabold text-white mt-4 mb-6 italic">Hubungi <span class="text-cyan-500">Kami</span></h1>
+            <p class="text-slate-400 max-w-xl mx-auto leading-relaxed">Punya pertanyaan mengenai projek kami atau ingin berkolaborasi? Kami siap mendengar pesan Anda.</p>
+        </div>
+    </header>
+
+    <section class="pb-24 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                
+                <div class="space-y-8" data-aos="fade-right">
+                    <div class="glass-card p-8 rounded-[2rem]">
+                        <h3 class="text-2xl font-bold text-white mb-6">Informasi Kelompok</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-cyan-500/10 rounded-2xl flex items-center justify-center text-cyan-500 shrink-0">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold">Lokasi Kami</h4>
+                                    <p class="text-slate-400 text-sm">Jakarta Utara, DKI Jakarta<br>Indonesia</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-500 shrink-0">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold">Email Tim</h4>
+                                    <p class="text-slate-400 text-sm">kelompok1.infor4@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-500 shrink-0">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold">Media Sosial</h4>
+                                    <p class="text-slate-400 text-sm">@infor4_kelompok1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-[2rem] overflow-hidden h-64 border border-white/5 grayscale hover:grayscale-0 transition duration-500">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63481.16140726202!2d106.845189!3d-6.121489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e23f03b22cf%3A0x300c529450a80b0!2sJakarta%20Utara%2C%20Kota%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709945000000!5m2!1sid!2sid" 
+                            class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="glass-card p-10 rounded-[2rem]" data-aos="fade-left">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Nama Lengkap</label>
+                                <input type="text" placeholder="Masukkan nama..." class="input-field w-full p-4 rounded-2xl outline-none text-white text-sm">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Email</label>
+                                <input type="email" placeholder="nama@email.com" class="input-field w-full p-4 rounded-2xl outline-none text-white text-sm">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Subjek Pesan</label>
+                            <select class="input-field w-full p-4 rounded-2xl outline-none text-white text-sm appearance-none cursor-pointer">
+                                <option class="bg-[#0f172a]">Tanya Projek</option>
+                                <option class="bg-[#0f172a]">Saran & Masukan</option>
+                                <option class="bg-[#0f172a]">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Pesan</label>
+                            <textarea rows="5" placeholder="Tuliskan pesan Anda di sini..." class="input-field w-full p-4 rounded-2xl outline-none text-white text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-500 text-[#0f172a] font-extrabold py-5 rounded-2xl transition duration-300 transform hover:-translate-y-1 shadow-xl shadow-cyan-500/20 flex items-center justify-center space-x-2">
+                            <span>Kirim Pesan</span>
+                            <i class="fas fa-paper-plane text-sm"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-slate-500 text-sm tracking-widest uppercase">
+            © 2026 Kelompok 1 Infor4. Built for Excellence.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
